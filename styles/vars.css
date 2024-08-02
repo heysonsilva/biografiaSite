@@ -1,0 +1,16 @@
+:root {
+    /* Cores da página */
+    --background-default: #111111;
+    --secondary-color: #303030;
+    --text-colors-in-page: #fff;
+
+    /* Padronização para botões PRINCIPAIS não animados */
+    --background-primary-button: #fff;
+    --padding-primary-button: 20px 100px;
+    --color-font-primary-button: #111111;
+
+    /* Padronização para botões SECUNDARIOS não animados */
+    --background-secondary-button: none;
+    --padding-secondary-button: 10px 60px;
+    --color-font-secondary-button: #fff;
+}
