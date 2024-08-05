@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.all_tela {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-default);
+    display: flex;
+    flex-direction: column;
+}
+
+.header__page {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#portifolioText {
+    width: 270px;
+    height: 250px;
+    opacity: 0.8;
+}
+
+.content_page {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-default);
+    align-items: center;
+}
