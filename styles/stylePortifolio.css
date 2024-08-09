@@ -10,7 +10,7 @@ html {
     height: 100%;
 }
 
-.all_tela {
+#content {
     width: 100vw;
     height: 100vh;
     background-color: var(--background-default);
@@ -21,10 +21,10 @@ html {
 .header__page {
     width: 100%;
     height: 15vh;
-    background-color: var(--secondary-color);
+    background-color: var(--background-default);
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
 }
 
 #portifolioText {
@@ -40,4 +40,22 @@ html {
     justify-content: center;
     background-color: var(--background-default);
     align-items: center;
+}
+
+.fa-circle-arrow-left {
+    font-size: 25px;
+    cursor: pointer;
+    position: fixed;
+    left: 5vw;
+    color: #fff;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.fa-circle-arrow-left:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(1px 1px 30px  var(--text-colors-in-page) );
+}
+
+.txt_in_header {
+    color: #fff;
 }
