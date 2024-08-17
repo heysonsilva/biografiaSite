@@ -32,10 +32,7 @@ function renderizarPaginaInterna(pagina) {
 //         });
 // }
 
-
-
 page ('/', () => renderizarPaginaInterna("index.html"))
 page('/portifolio', () => renderizarPaginaInterna("portifolio.html"))
 // page('/orcamento', () => renderizarPaginaExterna('https://api.whatsapp.com/send?phone=5584996708979&text=Ol%C3%A1%20Heyson%2C%20quero%20fazer%20um%20or%C3%A7amento'))
-
 page()

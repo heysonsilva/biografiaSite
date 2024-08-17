@@ -59,3 +59,21 @@ html {
 .txt_in_header {
     color: #fff;
 }
+
+
+#exampleProject {
+    width: 600px;
+    height: auto;
+}
+
+.card_project {
+    display: flex;
+    align-items: center;
+    
+}
+
+.card_project button {
+    cursor: pointer;
+    margin: 20px;
+    padding: 10px 50px;
+}
