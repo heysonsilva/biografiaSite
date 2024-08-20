@@ -25,6 +25,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 #portifolioText {
@@ -36,10 +37,10 @@ html {
 .content_page {
     width: 100%;
     height: 85vh;
-    display: flex;
     justify-content: center;
     background-color: var(--background-default);
     align-items: center;
+    display: flex;
 }
 
 .fa-circle-arrow-left {
@@ -52,8 +53,8 @@ html {
 }
 
 .fa-circle-arrow-left:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(1px 1px 30px  var(--text-colors-in-page) );
+    transform: scale(1.2);
+    filter: drop-shadow(1px 1px 30px var(--text-colors-in-page));
 }
 
 .txt_in_header {
@@ -67,13 +68,37 @@ html {
 }
 
 .card_project {
-    display: flex;
-    align-items: center;
-    
+    display: grid;
+    grid-template-columns: repeat(1, 50vw);
+    gap: 10px;
+    padding: 10px;
+    max-height: 80vh;
+    overflow: auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    position: relative;
+}
+
+.grid-container::-webkit-scrollbar {
+    display: none;
+    /* Esconde a barra de rolagem no Chrome, Safari e Opera */
 }
 
 .card_project button {
     cursor: pointer;
     margin: 20px;
     padding: 10px 50px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    color: rgb(212, 212, 212);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.055);
+    padding: 15px;
 }

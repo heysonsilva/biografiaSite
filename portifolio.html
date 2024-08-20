@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,28 @@
     <link rel="stylesheet" type="text/css" href="styles/mediaqueries.css">
     <link rel="stylesheet" type="text/css" href="styles/vars.css">
 </head>
+
 <body>
     <div id="content">
         <div class="header__page">
-            <a href="/">  <i class="fa-solid fa-circle-arrow-left" data-aos="fade-right"></i> </a>
+            <a href="/"> <i class="fa-solid fa-circle-arrow-left" data-aos="fade-right"></i> </a>
             <h2 class="txt_in_header" data-aos="fade-right"> Meus Projetos </h2>
         </div>
         <div class="content_page">
             <div class="card_project">
-                <img src="src/home.jpg" id="exampleProject" data-aos="fade-right">
-                <!-- <button> Ver Detalhes </button> -->
+                <div class="Card1 cards" data-aos-delay="100" data-aos="fade-right">
+                    <p> Site Institucional - Sorriso Perfeito Odontologia</p>
+                    <img src="src/home.jpg" id="exampleProject">
+                    <button> Visualizar Projeto </button>
+                </div>
+
+                <div class="card2 cards"  data-aos-delay="400" data-aos="fade-right">
+                    <img src="src/home.jpg" id="exampleProject">
+                </div>
+
+                <div class="card3 cards"  data-aos-delay="700" data-aos="fade-right">
+                    <img src="src/home.jpg" id="exampleProject">
+                </div>
             </div>
         </div>
     </div>
@@ -30,4 +43,5 @@
     <script>AOS.init();</script>
     <script src="https://kit.fontawesome.com/a54729bae4.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
