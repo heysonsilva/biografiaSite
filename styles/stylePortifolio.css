@@ -46,8 +46,7 @@ html {
 .fa-circle-arrow-left {
     font-size: 25px;
     cursor: pointer;
-    position: fixed;
-    left: 5vw;
+    margin: 0vw 30vw 0vw 0vw;
     color: #fff;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -59,12 +58,14 @@ html {
 
 .txt_in_header {
     color: #fff;
+    margin-right: 36vw;
 }
 
 
 #exampleProject {
     width: 600px;
     height: auto;
+    margin: 10px;
 }
 
 .card_project {
@@ -82,23 +83,61 @@ html {
 
 .grid-container::-webkit-scrollbar {
     display: none;
-    /* Esconde a barra de rolagem no Chrome, Safari e Opera */
 }
-
-.card_project button {
-    cursor: pointer;
-    margin: 20px;
-    padding: 10px 50px;
-}
-
 .cards {
     display: flex;
     flex-direction: column;
-    gap:10px;
     color: rgb(212, 212, 212);
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.055);
     padding: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.buttonBehance {
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: #222222;
+    background-color: #028f21;
+    padding: 10px 30px;
+    transition: transform 0.3s ease, background-color 0.5s ease;
+}
+.buttonBehance i {
+    color: #fff;
+    font-size: 15px;
+    transform: none;
+}
+
+.buttonBehance:hover {
+    /* transform: scale(1.03); */
+    background-color: #013f0f    ;
+}
+
+#viewProjectButton {
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-colors-in-page);
+    background-color: #222222;
+    font-size: 14px;
+    padding: 10px 90px;
+    transition: transform 0.3s ease, background-color 0.5s ease;
+}
+
+#viewProjectButton:hover {
+    /* transform: scale(1.03); */
+    background-color: var(--secondary-color);
+}
+
+.detailsProject {
+    display: flex;
 }
