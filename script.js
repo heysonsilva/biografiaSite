@@ -34,6 +34,7 @@ function renderizarPaginaInterna(pagina) {
 
 page ('/', () => renderizarPaginaInterna("index.html"))
 page ('/portifolio', () => renderizarPaginaInterna("portifolio.html"))
-page ('/aboutme', () => renderizarPaginaInterna(''))
+page ('/aboutme', () => renderizarPaginaInterna('aboutme.html'))
 
 page()
+

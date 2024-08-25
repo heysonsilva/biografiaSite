@@ -16,6 +16,15 @@
     height: 100%;
   }
 
+  #content {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-default);
+    display: flex;
+    flex-direction: column;
+}
+
+
   .all_page {
     width: 100vw;
     height: 100vh;
@@ -32,7 +41,7 @@
     border-radius: 30px;
     width: 150px;
     height: 150px;
-    margin: 80px 0px 10px 0px;
+    margin: 10vh 0px 2vh 40vw;
   }
 
   .text_area {
@@ -87,98 +96,299 @@
     border: none;
     cursor: pointer;
   }
+
+
+  /* MEDIA QUERIE PARA PAGINA DE MEUS PROJETOS */
+  * {
+    margin: 0;
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
+  }
+
+  body,
+  html {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .header__page {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--background-default);
+  }
+  .content_page {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: 12vh;
+    padding-bottom: 10vh;
+    justify-content: center;
+    background-color: var(--background-default);
+    align-items: center;
+    display: flex;
+  }
+
+  .fa-circle-arrow-left {
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    color: #fff;
+  }
+  .txt_in_header {
+    color: #fff;
+    width: 40vw;
+    top: 5vh;
+    left: 30vw;
+    position: absolute;
+    font-size: 25px;
+    text-align: center;
+  }
+
+
+  #exampleProject {
+    width: 30rem;
+    height: auto;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    color: rgb(212, 212, 212);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.055);
+    width: auto;
+    padding: auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  .buttonBehance {
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: #222222;
+    background-color: #028f21;
+    padding: 10px 20px;
+  }
+
+  #viewProjectButton {
+    font-family: "Lexend", sans-serif;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-colors-in-page);
+    background-color: #222222;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .detailsProject {
+    display: flex;
+  }
+
 }
 
-  /* Para dispositivos móveis (max-width: 480px) */
-  @media (max-width: 480px) {
-    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+/* Para dispositivos móveis (max-width: 480px) */
+@media (max-width: 480px) {
+  @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
-    * {
-      margin: 0;
-      text-decoration: none;
-      font-family: "Lexend", sans-serif;
+  * {
+    margin: 0;
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
 
-    }
-
-    body,
-    html {
-      width: 100%;
-      height: 100%;
-    }
-
-    .all_page {
-      width: 100vw;
-      height: 100vh;
-      background-color: var(--background-default);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-
-    .social_networks {
-      position: relative;
-    }
-
-    #img__perfil {
-      border-radius: 30px;
-      width: 150px;
-      height: 150px;
-      margin: 80px 0px 10px 0px;
-    }
-
-    .text_area {
-      color: var(--text-colors-in-page);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-
-
-    .card_buttons {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-
-    .middle {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      margin: 20px;
-    }
-
-    .btn {
-      font-family: "Open Sans", sans-serif;
-      border: 1px solid var(--text-colors-in-page);
-      font-weight: 600;
-      border-radius: 10px;
-      color: var(--text-colors-in-page);
-      font-size: 14px;
-      padding: 20px 100px;
-      transition: transform 0.3s ease, background-color 0.5s ease;
-    }
-
-    .btn:hover {
-      transform: scale(1.03);
-      background-color: var(--secondary-color);
-    }
-
-    .social_networks {
-      margin: 10px;
-    }
-
-    i {
-      transition: transform 0.3s ease, background-color 0.3s ease;
-    }
-
-    i:hover {
-      transform: scale(1.2)
-    }
-
-    /* MEDIA QUERIE PARA PÁGINA DE MEUS PROJETOS */
-    
   }
+
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+  }
+
+  .all_page {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .social_networks {
+    position: relative;
+  }
+
+  #img__perfil {
+    border-radius: 30px;
+    width: 150px;
+    height: 150px;
+    margin: 10vh 0px 2vh 30vw;
+  }
+
+  .text_area {
+    color: var(--text-colors-in-page);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .card_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .btn {
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid var(--text-colors-in-page);
+    font-weight: 600;
+    border-radius: 10px;
+    color: var(--text-colors-in-page);
+    font-size: 14px;
+    padding: 20px 100px;
+    transition: transform 0.3s ease, background-color 0.5s ease;
+  }
+
+  .btn:hover {
+    transform: scale(1.03);
+    background-color: var(--secondary-color);
+  }
+
+  .social_networks {
+    margin: 10px;
+  }
+
+  i {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  i:hover {
+    transform: scale(1.2)
+  }
+
+  /* MEDIA QUERIE PARA PÁGINA DE MEUS PROJETOS */
+
+  * {
+    margin: 0;
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
+  }
+
+  body,
+  html {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #content {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-default);
+    display: flex;
+    flex-direction: column;
+}
+
+
+  .header__page {
+    width: 100%;
+    height: 15vh;
+    background-color: var(--background-default);
+  }
+  .content_page {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: 13vh;
+    padding-bottom: 10vh;
+    justify-content: center;
+    background-color: var(--background-default);
+    align-items: center;
+    display: flex;
+  }
+
+  .fa-circle-arrow-left {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    color: #fff;
+  }
+  .txt_in_header {
+    color: #fff;
+    width: 40vw;
+    top: 5vh;
+    left: 30vw;
+    position: absolute;
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+  #exampleProject {
+    width: 15rem;
+    height: auto;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    color: rgb(212, 212, 212);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.055);
+    width: auto;
+    padding: auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+
+  .buttonBehance {
+    font-family: "Open Sans", sans-serif;
+    border: none;
+    cursor: pointer;
+    color: #222222;
+    background-color: #028f21;
+    padding: 10px 20px;
+  }
+
+  #viewProjectButton {
+    font-family: "Lexend", sans-serif;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-colors-in-page);
+    background-color: #222222;
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .detailsProject {
+    display: flex;
+  }
+
+}

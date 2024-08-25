@@ -1,0 +1,15 @@
+.btn1 {
+    font-family: "Open Sans", sans-serif;
+    border: 1px solid #4b4b4b;
+    font-weight: 600;
+    border-radius: 10px;
+    color: var(--text-colors-in-page);
+    font-size: 14px;
+    padding: 20px 100px;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.btn1:hover {
+    transform: scale(1.03);
+    background-color: var(--secondary-color);
+}
