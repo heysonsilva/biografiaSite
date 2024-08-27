@@ -1,15 +1,121 @@
-.btn1 {
-    font-family: "Open Sans", sans-serif;
-    border: 1px solid #4b4b4b;
-    font-weight: 600;
-    border-radius: 10px;
-    color: var(--text-colors-in-page);
-    font-size: 14px;
-    padding: 20px 100px;
-    transition: transform 0.5s ease, background-color 0.5s ease;
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
 }
 
-.btn1:hover {
-    transform: scale(1.03);
+#content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.all__page {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-default);
+}
+
+.header__aboutme {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__aboutme > a > i{
+    position: fixed;
+    left: 10vw;
+    font-size: 25px;
+    cursor: pointer;
+    position: fixed;
+    color: #fff;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.header__aboutme > a > i:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(1px 1px 30px var(--text-colors-in-page));
+}
+
+.conteudoDaPagina {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo {
+    width: 50vw;
+}
+
+#headline__conteudo {
+    margin: 10px 0px;
+    font-size: 22px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--text-colors-in-page);
+    text-align: left;
+}
+
+#text_in_conteudo {
+    text-align: left;
+    font-size: 17px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: rgb(173, 173, 173);
+}
+
+.skills__and__socials {
+    margin: 20px 0px;
+    display: flex;
+    gap: 10px;
+}
+
+.skills__area {
+    width: 50%;
+    border-radius: 5px;
     background-color: var(--secondary-color);
+    color: var(--text-colors-in-page);
+    padding: 10px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialnetwork__area {
+    width: 50%;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--text-colors-in-page);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#icons__tech {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+}
+
+#socials__area {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    background-color: none;
+}
+
+#social__area > a > button {
+    padding: 0;
+    background-color: green;
+    background: none;
 }
